@@ -1,0 +1,26 @@
+<?php
+require 'Pessoa.php';
+require 'Aluno.php';
+require 'Professor.php';
+$p = new Pessoa();
+$p->nome = 'Genisson';
+$p->rg = 123456789;
+$p->email = 'genisson@email.com';
+$p->listarDados();
+echo "\n==================================================\n";
+$aluno = new Aluno();
+$aluno->nome = 'João Nascimento';
+$aluno->rg = 1234657;
+$aluno->email = 'joao@email.com';
+$aluno->anoIgresso = 2022;
+$aluno->matricula = '201945678gg';
+$aluno->inscrverPeriodo($aluno, 3);
+echo "\n==================================================\n";
+$prof = new Professor();
+$prof->nome = 'Obi-Wan Kenobi';
+$prof->rg = 4884848;
+$prof->email = 'obi.wan@email.com';
+$prof->linkCurriculoLattes = 'lattes';
+$prof->idFuncional = 121212;
+$prof->decicacaoExclusiva = true;
+$prof->listarCurriculo();
